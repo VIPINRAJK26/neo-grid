@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./TrendingSlide.css"; 
 
 const TrendingSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
+ 
   const cards = [
     {
       title: "Heading 1",

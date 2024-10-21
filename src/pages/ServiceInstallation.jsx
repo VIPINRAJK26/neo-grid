@@ -1,4 +1,3 @@
-import React from "react";
 import ServiceOverview from "../components/installation/ServiceOverview";
 import BenefitsSection from "../components/installation/BenefitsSection";
 import ProjectGallery from "../components/installation/ProjectGallery";
@@ -17,7 +16,7 @@ const ServiceInstallation = () => {
       <div>
         <ProjectGallery />
       </div>
-      <div className="py-5">
+      <div >
         <Contact />
       </div>
       <div>
