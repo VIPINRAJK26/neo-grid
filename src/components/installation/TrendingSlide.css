@@ -1,0 +1,57 @@
+.slider-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  position: relative;
+  overflow: hidden; 
+  width: 90%; 
+  margin: auto; 
+}
+
+.slider-heading {
+  font-size: 2rem; 
+  font-weight: bold; 
+  text-align: center; 
+  width: 100%; 
+  margin-bottom: 10px; 
+}
+
+.card-slider {
+  display: flex;
+  transition: transform 0.3s ease; 
+}
+
+.card {
+  min-width: 25%; 
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%; 
+  border-radius: 8px;
+}
+
+.slider-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1; 
+  color: #333; 
+}
+
+.slider-button.left {
+  position: absolute;
+  left: 10px;
+  top: 50%; 
+  transform: translateY(-50%); 
+}
+
+.slider-button.right {
+  position: absolute;
+  right: 10px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+}
