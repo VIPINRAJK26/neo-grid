@@ -27,7 +27,7 @@ const BenefitsSection = () => {
       id: 4,
       text: "Energy Independence",
       text2:
-        "Provides a clean, renewable energy source, reducing carbon footprints",
+        "Provides a clean, renewable energy source, reducing carbon footprints.",
       icon: "https://cdn-icons-png.flaticon.com/128/17306/17306508.png",
     },
     {
@@ -45,13 +45,13 @@ const BenefitsSection = () => {
     {
       id: 7,
       text: "Government Incentives",
-      text2: "Access to rebates and tax credits, lowering upfront costs",
+      text2: "Access to rebates and tax credits, lowering upfront costs.",
       icon: "https://cdn-icons-png.flaticon.com/128/4116/4116431.png",
     },
     {
       id: 8,
       text: "Low Maintenance",
-      text2: "Access to rebates and tax credits, lowering upfront costs",
+      text2: "Minimal upkeep required for solar installations.",
       icon: "https://cdn-icons-png.flaticon.com/128/2778/2778802.png",
     },
     {
@@ -63,33 +63,28 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <div className="container benefits-section py-5">
-      <div className="row">
-        <div className="col-lg-4 col-md-12 benefits-text align-items-center d-flex">
-          <h2 className="benefits-title w-75 m-auto ">
+    <div className="container mx-auto py-5">
+      <div className="flex flex-col lg:flex-row">
+        <div className="lg:w-1/3 w-full flex items-center">
+          <h2 className="benefits-title  font-bold text-center w-3/4 m-auto">
             The Caliber of Neogrid Projects and Installation
           </h2>
         </div>
-        <div className="col-lg-8 col-md-12 benefits-images">
-          <div className="row">
+        <div className="lg:w-2/3 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {deliverables.map((deliverable) => (
-              <div
-                key={deliverable.id}
-                className="col-lg-4 col-md-6 col-sm-12 deliverable-item"
-              >
-                <div className="icon-container p-3 justify-content-center align-content-center align-items-center d-flex-column ">
+              <div key={deliverable.id} className="flex flex-col items-center">
+                <div className="icon-container p-3 flex flex-col justify-center items-center">
                   <div className="benefit-img text-center">
                     <img
                       src={deliverable.icon}
                       alt={deliverable.text}
-                      className="deliverable-icon"
+                      className="w-16 h-16"
                     />
                   </div>
-                  <div className="overlays ">
-                    <div className="overlay-texts text-center">
-                      <h5 className="fw-bold pb-1">{deliverable.text}</h5>
-                      <p >{deliverable.text2}</p>
-                    </div>
+                  <div className="overlay-texts text-center">
+                    <h5 className="font-bold pb-1">{deliverable.text}</h5>
+                    <p>{deliverable.text2}</p>
                   </div>
                 </div>
               </div>
@@ -102,3 +97,4 @@ const BenefitsSection = () => {
 };
 
 export default BenefitsSection;
+

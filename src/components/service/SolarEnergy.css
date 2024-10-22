@@ -1,0 +1,33 @@
+.solar-head img {
+  width: 100%;
+  height: 100vh;
+}
+
+.solar-body {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  top: 250px;
+}
+
+.solar-body p {
+  text-align: justify;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  max-width: 80%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .solar-body {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    top: 0px;
+  }
+  .solar-head img {
+    width: 100%;
+    height: 90vh;
+  }
+}

@@ -2,20 +2,23 @@ import "./Contact.css"
 
 const Contact = () => {
   return (
-    <div className="container contact py-5">
-      <div className="contact-head py-4">
-        <h2 className='fw-bold'>Ensure Your Power Backup with <br /> Trusted Installation</h2>
+    <div className="max-w-screen-xl mx-auto py-5 text-center">
+      <div className="py-4">
+        <h2 className="font-bold text-2xl md:text-3xl">
+          Ensure Your Power Backup with <br /> Trusted Installation
+        </h2>
       </div>
-      <div className="contact-buttons d-flex gap-3">
-        <button className="btn bg-success rounded-3 fs-6 fw-bold text-white">
+      <div className="flex justify-center gap-3">
+        <button className="bg-green-600 rounded-3xl text-white text-lg font-bold py-2 px-4 hover:bg-green-700 transition duration-200">
           Contact Now
         </button>
-        <button className="btn bg-info rounded-3 fs-6 fw-bold text-white">
+        <button className="bg-blue-400 rounded-3xl text-white text-lg font-bold py-2 px-4 hover:bg-blue-500 transition duration-200">
           Contact with the Technical Team
         </button>
       </div>
     </div>
   );
-}
+};
 
-export default Contact
+export default Contact;
+

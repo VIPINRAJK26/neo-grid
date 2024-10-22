@@ -51,11 +51,11 @@ const ProjectGallery = () => {
   ];
 
   return (
-    <div className="container p-0">
+    <div className="container mx-auto p-0">
       <div className="gallary-head text-center pb-4">
-        <h2 className="fw-bold">Our Projects and Installations</h2>
+        <h2 className="font-bold">Our Projects and Installations</h2>
       </div>
-      <div className="d-flex justify-content-center">
+      <div className="flex justify-center">
         <ReactCardSlider slides={slides} />
       </div>
     </div>

@@ -1,9 +1,8 @@
-import { useState } from "react";
-import "./TrendingSlide.css"; 
+import React, { useState } from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css"; 
 
 const TrendingSlider = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
- 
   const cards = [
     {
       title: "Heading 1",
@@ -37,35 +36,32 @@ const TrendingSlider = () => {
     },
   ];
 
-  const slideLeft = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? cards.length - 4 : prevIndex - 1
-    );
-  };
-
-  const slideRight = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === cards.length - 4 ? 0 : prevIndex + 1
-    );
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
   };
 
   return (
-    <div className="slider-container container py-3">
-      <h2 className="slider-heading mb-3">Trending Products</h2>{" "}
-      <button className="slider-button left" onClick={slideLeft}>
-        &lt; 
-      </button>
-      <div className="card-slider">
-        {cards.slice(currentIndex, currentIndex + 4).map((card, index) => (
-          <div className="card border-0" key={index}>
-            <img src={card.image} alt={card.title} />
-            <h3 className="fw-bold">{card.title}</h3>
+    <div className="container py-3">
+      <h2 className="slider-heading mb-3 text-center  font-bold">Trending Products</h2>
+      <Carousel responsive={responsive} className="carousel" infinite={true}>
+        {cards.map((card, index) => (
+          <div className="card border-0 p-4" key={index}>
+            <img src={card.image} alt={card.title} className="rounded-lg mb-2" />
+            <h3 className="fw-bold text-center">{card.title}</h3>
           </div>
         ))}
-      </div>
-      <button className="slider-button right" onClick={slideRight}>
-        &gt; 
-      </button>
+      </Carousel>
     </div>
   );
 };
