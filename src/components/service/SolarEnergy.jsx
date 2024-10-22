@@ -11,7 +11,9 @@ const SolarEnergy = () => {
         />
       </div>
       <div className="solar-body p-6">
-        <h1 className="font-bold text-center text-2xl md:text-3xl mb-4">Solar Energy Consultation</h1>
+        <h1 className="font-bold text-center text-2xl md:text-3xl mb-4">
+          Solar Energy Consultation
+        </h1>
         <p className="text-lg text-white-700">
           NeoGrid provides expert solar system installation consultations,
           guiding clients from initial planning to final implementation. Our
@@ -25,6 +27,4 @@ const SolarEnergy = () => {
   );
 };
 
-
-
-export default SolarEnergy
+export default SolarEnergy;

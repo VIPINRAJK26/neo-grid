@@ -1,4 +1,5 @@
 import "./ServiceOverview.css";
+import { Link } from "react-router-dom";
 
 const ServiceOverview = () => {
   return (
@@ -17,9 +18,11 @@ const ServiceOverview = () => {
         independence. With a focus on quality and performance, NeoGrid ensures
         reliable and eco-friendly solar power solutions.
       </p>
+      <Link to={"/ser"}>
+        <button>Service Page</button>
+      </Link>
     </div>
   );
 };
 
 export default ServiceOverview;
-
