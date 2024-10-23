@@ -2,7 +2,7 @@ import "./SolarEnergy.css";
 
 const SolarEnergy = () => {
   return (
-    <div>
+    <div className="solar-energy">
       <div className="solar-head">
         <img
           src="https://img.freepik.com/premium-vector/glow-curve-light-dark-blue-abstract-background_115968-126.jpg?ga=GA1.1.1208105082.1712396076&semt=ais_hybrid"

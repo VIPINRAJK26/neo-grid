@@ -7,7 +7,7 @@ const ServiceOverview = () => {
       <h1 className="animated-heading py-3 px-4 md:px-0 text-center">
         Project Execution & Installation of Solar Power System
       </h1>
-      <p className="text-center">
+      <p >
         NeoGrid offers comprehensive solar power system Projects/installation
         services for both domestic and commercial sectors, providing customized
         energy solutions that promote sustainability and cost efficiency. Our
